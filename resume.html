@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resume &mdash; Priamos Koumas</title>
+<meta name="description" content="Resume of Priamos Koumas - MS Computer Science candidate with a background in Management Information Systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#171512;
+    --limestone:#EDE6DA;
+    --limestone-dim:#A79C8C;
+    --brownstone:#8A5436;
+    --brass:#C89545;
+    --rule:#332E27;
+    --display:"Fraunces",Georgia,serif;
+    --body:"IBM Plex Sans",system-ui,sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ink);color:var(--limestone);font-family:var(--body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:900px;margin:0 auto;padding:0 32px}
+  .back{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--brass);text-decoration:none;display:inline-block;margin-bottom:32px}
+  .back:hover,.back:focus-visible{text-decoration:underline}
+  :focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+  header{padding:64px 0 40px;border-bottom:1px solid var(--rule)}
+  h1{font-family:var(--display);font-weight:600;font-size:clamp(36px,6vw,58px);line-height:1.05;margin:0 0 16px;letter-spacing:-.02em}
+  .contact{font-family:var(--mono);font-size:13px;color:var(--limestone-dim);margin:0 0 8px}
+  .avail{font-family:var(--mono);font-size:13px;color:var(--brass);margin:0}
+  section{padding:44px 0;border-bottom:1px solid var(--rule)}
+  .sec-head{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--limestone-dim);margin:0 0 28px;padding-bottom:10px;border-bottom:1px solid var(--rule)}
+  .item{padding:20px 0;border-top:1px solid var(--rule)}
+  .item:first-of-type{border-top:none;padding-top:0}
+  .item-top{display:flex;flex-wrap:wrap;gap:4px 16px;align-items:baseline;margin-bottom:4px}
+  h2{font-family:var(--body);font-weight:600;font-size:17px;margin:0;flex:1 1 auto}
+  .when{font-family:var(--mono);font-size:12px;color:var(--limestone-dim);white-space:nowrap}
+  .sub{font-size:14px;color:var(--limestone-dim);margin:0 0 12px;font-style:italic}
+  ul{margin:0;padding-left:18px}
+  li{margin-bottom:7px;font-size:15px}
+  li::marker{color:var(--brownstone)}
+  .summary{font-size:16px;margin:0;max-width:70ch}
+  .skill-row{display:grid;grid-template-columns:180px 1fr;gap:20px;padding:14px 0;border-top:1px solid var(--rule);font-size:15px}
+  .skill-row:first-of-type{border-top:none;padding-top:0}
+  .skill-label{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--limestone-dim);padding-top:3px}
+  .honors{margin:0;padding:0;list-style:none}
+  .honors li{padding:9px 0;border-top:1px solid var(--rule);margin:0}
+  .honors li:first-child{border-top:none}
+  footer{padding:44px 0 72px}
+  .btn{display:inline-block;text-decoration:none;font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:12px 20px;border:1px solid var(--brass);background:var(--brass);color:var(--ink);border-radius:2px;font-weight:500}
+  .btn:hover,.btn:focus-visible{background:transparent;color:var(--brass)}
+  @media (max-width:700px){
+    .wrap{padding:0 22px}
+    .skill-row{grid-template-columns:1fr;gap:6px}
+  }
+  @media print{
+    body{background:#fff;color:#000}
+    .back,footer{display:none}
+    a{color:#000}
+    .sec-head,.when,.skill-label,.sub,.contact{color:#555}
+    .avail{color:#000}
+    section,.item,.skill-row,.honors li,header{border-color:#ccc}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="back" href="./">&larr; Back</a>
+    <h1>Priamos Koumas</h1>
+    <p class="contact">priamoskoumas@gmail.com &nbsp;&middot;&nbsp; 508 493 9306 &nbsp;&middot;&nbsp; linkedin.com/in/priamos</p>
+    <p class="avail">Graduating December 2026 &nbsp;&middot;&nbsp; Available for full-time roles from January 2027</p>
+  </header>
+
+  <section>
+    <p class="sec-head">Summary</p>
+    <p class="summary">MS Computer Science candidate with a Management Information Systems foundation (BS, Summa Cum Laude, 3.9 GPA) working at the intersection of business and technology. Experienced gathering requirements from stakeholders, improving processes, and turning data into reporting that non-technical audiences can act on. Technical training deep enough to understand how systems work and communicate credibly with the teams that build them.</p>
+  </section>
+
+  <section>
+    <p class="sec-head">Education</p>
+    <div class="item">
+      <div class="item-top"><h2>Northeastern University</h2><span class="when">Expected December 2026</span></div>
+      <p class="sub">Master of Science, Computer Science &middot; Boston, MA</p>
+      <ul><li>Object-Oriented Design &middot; Data Structures &amp; Algorithms &middot; Discrete Structures &middot; Web Development</li></ul>
+    </div>
+    <div class="item">
+      <div class="item-top"><h2>University of Massachusetts Dartmouth</h2><span class="when">3.9 GPA &middot; Summa Cum Laude</span></div>
+      <p class="sub">BS, Management Information Systems &mdash; Technology &amp; Management</p>
+      <ul><li>Business Intelligence &amp; Analytics &middot; Information Systems Analysis &amp; Design &middot; Database Design &amp; Implementation &middot; Management of Information Resources &middot; Exploratory Data Analysis</li></ul>
+    </div>
+  </section>
+
+  <section>
+    <p class="sec-head">Projects</p>
+    <div class="item">
+      <div class="item-top"><h2>Nonprofit intake system</h2><span class="when">Jan 2024 &ndash; Apr 2024</span></div>
+      <p class="sub">Capstone project, University of Massachusetts Dartmouth</p>
+      <ul>
+        <li>Interviewed client staff to map an existing manual intake process, identified where it was failing, and made the case for replacing it.</li>
+        <li>Delivered a Salesforce-based system that cut manual processing time by approximately 60% and eliminated duplicate records, then documented the workflow so staff could run it independently.</li>
+      </ul>
+    </div>
+    <div class="item">
+      <div class="item-top"><h2>Healthcare analytics dashboard</h2><span class="when">Dec 2025 &ndash; Jan 2026</span></div>
+      <ul>
+        <li>Cleaned, validated and audited a healthcare dataset covering patient demographics and risk factors before drawing conclusions from it.</li>
+        <li>Built interactive Power BI reporting that surfaced trends clearly for a non-technical audience and stated where the analysis had limits.</li>
+      </ul>
+    </div>
+    <div class="item">
+      <div class="item-top"><h2>Budget-first trip planning application</h2><span class="when">Jul 2026 &ndash; Aug 2026</span></div>
+      <p class="sub">Team project, Northeastern University</p>
+      <ul>
+        <li>Owned the budgeting feature set, including category budgets and per-person cost splitting, on a product built around planning to a fixed budget.</li>
+        <li>Designed and ran a usability study with real users, then led the product redesign the findings pointed to.</li>
+      </ul>
+    </div>
+    <div class="item">
+      <div class="item-top"><h2>Clinical trial information hub</h2><span class="when">Mar 2026 &ndash; Apr 2026</span></div>
+      <p class="sub">Team project, Northeastern University</p>
+      <ul>
+        <li>Owned the research records module end to end and maintained data integrity across the record set so information stayed accurate and retrievable.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <p class="sec-head">Experience</p>
+    <div class="item">
+      <div class="item-top"><h2>Apple &mdash; Product Specialist</h2><span class="when">Nov 2021 &ndash; Jun 2023</span></div>
+      <p class="sub">Providence, RI</p>
+      <ul>
+        <li>Advised customers on product selection and troubleshot technical issues, translating technical information into clear, accessible guidance.</li>
+        <li>Maintained product expertise across hardware, software and services, collaborating with teammates in a fast-paced retail environment.</li>
+      </ul>
+    </div>
+    <div class="item">
+      <div class="item-top"><h2>UMass Dartmouth &mdash; Student Ambassador &amp; Peer Mentor</h2><span class="when">Oct 2023 &ndash; May 2024</span></div>
+      <p class="sub">Charlton College of Business</p>
+      <ul>
+        <li>Represented the college at academic, outreach and recruitment events as a point of contact for prospective and current students.</li>
+        <li>Provided academic and administrative support, assisting students with course planning and resource navigation.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <p class="sec-head">Skills</p>
+    <div class="skill-row"><div class="skill-label">Business analysis</div><div>Requirements gathering &middot; stakeholder interviews &middot; process improvement &middot; solution design &middot; technical documentation</div></div>
+    <div class="skill-row"><div class="skill-label">Data &amp; reporting</div><div>SQL &middot; Advanced Excel &middot; Power BI &middot; Tableau &middot; data cleaning and validation &middot; dashboard development</div></div>
+    <div class="skill-row"><div class="skill-label">Systems</div><div>Salesforce &middot; MySQL &middot; MongoDB &middot; database design &middot; Microsoft Office Suite</div></div>
+    <div class="skill-row"><div class="skill-label">Technical foundation</div><div>Python &middot; R &middot; JavaScript &middot; Java &middot; Git</div></div>
+  </section>
+
+  <section>
+    <p class="sec-head">Honors</p>
+    <ul class="honors">
+      <li>Summa Cum Laude &mdash; University of Massachusetts Dartmouth</li>
+      <li>Helen A. LaFrancois Award for Excellence in Performance by a Student in the Junior Year, 2023</li>
+      <li>Beta Gamma Sigma Honor Society</li>
+    </ul>
+  </section>
+
+  <footer>
+    <a class="btn" href="mailto:priamoskoumas@gmail.com">Get in touch</a>
+  </footer>
+</div>
+</body>
+</html>
