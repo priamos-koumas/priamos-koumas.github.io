@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Priamos Koumas</title>
+<meta name="description" content="Priamos Koumas - MS Computer Science candidate at Northeastern University with a background in Management Information Systems. Working at the intersection of technology and business.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#171512;
+    --limestone:#EDE6DA;
+    --limestone-dim:#A79C8C;
+    --brownstone:#8A5436;
+    --brass:#C89545;
+    --rule:#332E27;
+    --display:"Fraunces",Georgia,serif;
+    --body:"IBM Plex Sans",system-ui,sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,monospace;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+  body{margin:0;background:var(--ink);color:var(--limestone);font-family:var(--body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 32px}
+  .masthead{padding:96px 0 64px;border-bottom:1px solid var(--rule)}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);margin:0 0 24px}
+  h1{font-family:var(--display);font-weight:600;font-size:clamp(44px,7vw,86px);line-height:1.02;margin:0 0 24px;letter-spacing:-.02em}
+  .standfirst{font-size:clamp(17px,2vw,21px);max-width:60ch;margin:0 0 36px}
+  .standfirst em{font-family:var(--display);font-style:italic;color:var(--brass)}
+  .meta{font-family:var(--mono);font-size:13px;color:var(--limestone-dim);display:flex;flex-wrap:wrap;gap:8px 20px;margin:0 0 32px}
+  .actions{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-block;text-decoration:none;font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:12px 20px;border:1px solid var(--rule);border-radius:2px;transition:border-color .2s,color .2s,background .2s}
+  .btn:hover,.btn:focus-visible{border-color:var(--brass);color:var(--brass)}
+  .btn--solid{background:var(--brass);color:var(--ink);border-color:var(--brass);font-weight:500}
+  .btn--solid:hover,.btn--solid:focus-visible{background:transparent;color:var(--brass)}
+  :focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+  section{padding:72px 0;border-bottom:1px solid var(--rule)}
+  .sec-head{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--limestone-dim);margin:0 0 40px;padding-bottom:12px;border-bottom:1px solid var(--rule)}
+  h2{font-family:var(--display);font-weight:600;font-size:28px;margin:0 0 6px;letter-spacing:-.01em}
+  h3{font-family:var(--body);font-weight:600;font-size:16px;margin:0 0 4px}
+  .entry{padding:34px 0;border-top:1px solid var(--rule)}
+  .entry:first-of-type{border-top:none;padding-top:0}
+  .entry-top{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:baseline;margin-bottom:22px}
+  .entry-top h2{flex:1 1 auto}
+  .stamp{font-family:var(--mono);font-size:12px;color:var(--limestone-dim);white-space:nowrap}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+  .side-label{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 10px;padding-left:14px;position:relative;color:var(--limestone-dim)}
+  .side-label::before{content:"";position:absolute;left:0;top:6px;width:6px;height:6px;border-radius:50%;background:var(--brownstone)}
+  .side--tech .side-label::before{background:var(--brass)}
+  .split p{margin:0;font-size:15px}
+  .result{margin-top:18px;font-family:var(--mono);font-size:13px;color:var(--brass)}
+  .row{display:grid;grid-template-columns:1fr 2fr;gap:32px;padding:26px 0;border-top:1px solid var(--rule)}
+  .row:first-of-type{border-top:none;padding-top:0}
+  .row-side .stamp{display:block;margin-top:4px;white-space:normal}
+  .row ul{margin:0;padding-left:18px}
+  .row li{margin-bottom:8px;font-size:15px}
+  .row li::marker{color:var(--brownstone)}
+  .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+  .skill-group p{margin:0;font-size:15px}
+  .honors{margin:0;padding:0;list-style:none;font-size:15px}
+  .honors li{padding:10px 0;border-top:1px solid var(--rule)}
+  .honors li:first-child{border-top:none}
+  footer{padding:64px 0 80px}
+  footer p{font-family:var(--mono);font-size:13px;color:var(--limestone-dim);margin:0 0 18px}
+  @media (max-width:760px){
+    .wrap{padding:0 22px}
+    .masthead{padding:64px 0 48px}
+    section{padding:56px 0}
+    .split,.row,.skills{grid-template-columns:1fr;gap:22px}
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="eyebrow">Boston, MA &middot; Relocating to New York City</p>
+    <h1>Priamos<br>Koumas</h1>
+    <p class="standfirst">I work in the space between a business problem and the system that solves it &mdash; close enough to the technology to <em>build and debug it myself</em>, focused on the people who have to use it.</p>
+    <p class="meta">
+      <span>MS Computer Science, Northeastern &middot; Dec 2026</span>
+      <span>BS Management Information Systems, UMass Dartmouth</span>
+    </p>
+    <div class="actions">
+      <a class="btn btn--solid" href="mailto:priamoskoumas@gmail.com">priamoskoumas@gmail.com</a>
+      <a class="btn" href="https://linkedin.com/in/priamos">LinkedIn</a>
+      <a class="btn" href="https://github.com/priamos-koumas">GitHub</a>
+    </div>
+  </div>
+</header>
+
+<section id="work">
+  <div class="wrap">
+    <p class="sec-head">Selected work &mdash; the problem, and what I built</p>
+
+    <article class="entry">
+      <div class="entry-top"><h2>Nonprofit intake system</h2><span class="stamp">Salesforce &middot; 2024</span></div>
+      <div class="split">
+        <div class="side--biz"><p class="side-label">The problem</p><p>A nonprofit was processing client intake by hand. Records were duplicated across staff, the data was slow to reach anyone who needed it, and no one trusted the numbers.</p></div>
+        <div class="side--tech"><p class="side-label">What I did</p><p>Interviewed their staff to map how intake actually ran, then designed, configured and deployed a Salesforce-based system &mdash; and documented the workflow so they could run it without me.</p></div>
+      </div>
+      <p class="result">Manual processing time down roughly 60%. Duplicate records eliminated.</p>
+    </article>
+
+    <article class="entry">
+      <div class="entry-top"><h2>Healthcare analytics dashboard</h2><span class="stamp">Power BI &middot; 2025&ndash;26</span></div>
+      <div class="split">
+        <div class="side--biz"><p class="side-label">The problem</p><p>A health dataset covering patient demographics and risk factors that no one could read &mdash; inconsistent, unvalidated, and useless to a non-technical audience as it stood.</p></div>
+        <div class="side--tech"><p class="side-label">What I did</p><p>Cleaned, modeled and audited the data before drawing a single conclusion, then built an interactive dashboard that surfaces the trends and is explicit about where the analysis has limits.</p></div>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="entry-top"><h2>FinTrip &mdash; budget-first trip planner</h2><span class="stamp">React &middot; Node &middot; MongoDB &middot; 2026</span></div>
+      <div class="split">
+        <div class="side--biz"><p class="side-label">The problem</p><p>Trip planning tools start with an itinerary and leave cost as an afterthought. We inverted it: plan against a fixed budget from the first screen.</p></div>
+        <div class="side--tech"><p class="side-label">What I did</p><p>Owned the expense and budgeting features, including category budgets and per-person cost splitting. Ran a usability study, led the redesign it pointed to, brought the app to WCAG 2.1 AA, and deployed it.</p></div>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="entry-top"><h2>Oncology trial information hub</h2><span class="stamp">Node &middot; Express &middot; MongoDB &middot; 2026</span></div>
+      <div class="split">
+        <div class="side--biz"><p class="side-label">The problem</p><p>Clinical trial information is scattered and hard to keep straight. Researchers need records they can add to and trust later.</p></div>
+        <div class="side--tech"><p class="side-label">What I did</p><p>Owned the research notes module end to end &mdash; full create, read, update and delete &mdash; and kept data integrity across the record set so information stayed reliably retrievable.</p></div>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="entry-top"><h2>Breast cancer classification</h2><span class="stamp">Python &middot; scikit-learn &middot; 2025</span></div>
+      <div class="split">
+        <div class="side--biz"><p class="side-label">The problem</p><p>Which features in clinical and histological data actually carry predictive signal for tumor classification &mdash; and how much can you trust the answer?</p></div>
+        <div class="side--tech"><p class="side-label">What I did</p><p>Ran exploratory analysis, formed and tested hypotheses, then evaluated models across several metrics, documenting the trade-off behind each decision rather than optimizing one number.</p></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <p class="sec-head">Experience</p>
+    <div class="row">
+      <div class="row-side"><h3>Apple</h3><span class="stamp">Product Specialist<br>Providence, RI &middot; 2021&ndash;2023</span></div>
+      <div><ul>
+        <li>First point of contact for customers: asked the right questions up front, resolved what I could directly, escalated when I actually needed to.</li>
+        <li>Translated technical detail into guidance people could act on, across every level of comfort with technology.</li>
+        <li>Held product knowledge across hardware, software and services in a high-volume environment.</li>
+      </ul></div>
+    </div>
+    <div class="row">
+      <div class="row-side"><h3>UMass Dartmouth</h3><span class="stamp">Student Ambassador &amp; Peer Mentor<br>Charlton College of Business &middot; 2023&ndash;2024</span></div>
+      <div><ul>
+        <li>Represented the college at academic, outreach and recruitment events as a point of contact for prospective and current students.</li>
+        <li>Supported students through course planning and records navigation, turning recurring questions into clearer guidance.</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <p class="sec-head">Education</p>
+    <div class="row">
+      <div class="row-side"><h3>Northeastern University</h3><span class="stamp">Boston, MA &middot; Expected Dec 2026</span></div>
+      <div>
+        <p style="margin:0 0 8px"><strong>Master of Science, Computer Science</strong></p>
+        <p style="margin:0;font-size:15px;color:var(--limestone-dim)">Object-Oriented Design &middot; Data Structures &amp; Algorithms &middot; Discrete Structures &middot; Web Development</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row-side"><h3>UMass Dartmouth</h3><span class="stamp">Dartmouth, MA &middot; 3.9 GPA, Summa Cum Laude</span></div>
+      <div>
+        <p style="margin:0 0 8px"><strong>BS, Management Information Systems &mdash; Technology &amp; Management</strong></p>
+        <p style="margin:0;font-size:15px;color:var(--limestone-dim)">Business Intelligence &amp; Analytics &middot; Information Systems Analysis &amp; Design &middot; Database Design &amp; Implementation &middot; Management of Information Resources &middot; Exploratory Data Analysis</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <p class="sec-head">Skills</p>
+    <div class="skills">
+      <div class="skill-group"><p class="side-label">Data &amp; analytics</p><p>SQL &middot; Advanced Excel &middot; Power BI &middot; Tableau &middot; Pandas &middot; NumPy &middot; data cleaning and validation</p></div>
+      <div class="skill-group"><p class="side-label">Building</p><p>Python &middot; JavaScript &middot; Java &middot; R &middot; C &middot; React &middot; Node.js &middot; Express &middot; MySQL &middot; MongoDB &middot; Git</p></div>
+      <div class="skill-group"><p class="side-label">Working with people</p><p>Requirements gathering &middot; process improvement &middot; technical documentation &middot; user research &middot; Salesforce</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="honors">
+  <div class="wrap">
+    <p class="sec-head">Honors</p>
+    <ul class="honors">
+      <li>Summa Cum Laude &mdash; University of Massachusetts Dartmouth</li>
+      <li>Helen A. LaFrancois Award for Excellence in Performance by a Student in the Junior Year, 2023</li>
+      <li>Beta Gamma Sigma Honor Society</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Available for full-time roles from January 2027. New York City.</p>
+    <div class="actions">
+      <a class="btn btn--solid" href="mailto:priamoskoumas@gmail.com">Get in touch</a>
+      <a class="btn" href="tel:+15084939306">508 493 9306</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
